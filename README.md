@@ -2,4 +2,4 @@
 Upload File using springboot
 Can be Tested by using GET method. Use the following URL
 
-http://localhost:8080/files?owner=salman&city=salman
+http://localhost:8080/files?owner=ownername&city=cityname
