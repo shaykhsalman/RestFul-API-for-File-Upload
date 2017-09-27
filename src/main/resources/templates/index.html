@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>File Upload Client</h1>  
+  
+<form method='post' action='/fileUploads' class="form-inline" enctype="multipart/form-data"> 
+<input type='file' class="form-control" name='file_upload' id='file_upload'></input>
+	<input type='text' name='owner' class="form-control" placeholder='Enter Your Name' ></input>
+	<input type='text' name='city' class="form-control" placeholder='Enter Your City'></input>
+      <div class="input-group-btn">
+		<input type='submit' value='Upload' class="btn btn-danger"></input>    
+      </div>
+      </form>
+     <div class="container-fluid">
+  <h2>Read Me</h2>
+  <h4>Uploaded file can be tested using Postmon - GET Method.</h4>      
+  <p>http://localhost:8080/files?owner=ownername&#38;city=cityname</p>
+</div>
+</div>
+
+</body>
+</html>
